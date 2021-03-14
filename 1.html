@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - HTML</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HV516F38ZH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HV516F38ZH');
+</script>
+</head>
+<body>
+  <input id="away" type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='white';
+  }
+">
+<input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='black';
+  }
+">
+<input id="night_day" type="button" value="야간모드" onclick="
+if(document.querySelector('#night_day').value === '야간모드'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#night_day').value = '주간모드';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='white';
+  }
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = '야간모드';
+  document.querySelectorAll('.abc').color='black';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='black';
+  }
+}
+">
+<h1><a class="abc" style="background-color:pink; padding-left:20px; padding-right:20px" href="index.html">WEB</a></h1>
+  <div id="grid">
+  <ul>
+    <li><a class="abc" href="1.html">1. HTML</a></li>
+    <li><a class="abc" href="2.html">2. CSS</a></li>
+    <li><a class="abc" href="3.html">3. JavaScript</a></li>
+  </ul>
+  <div id="article">
+  <h2>HTML이란 무엇인가? <strong><u><a class="abc" href="https://www.w3.org/TR/html52/"
+    target="_blank" title="html5 specification">설명서 링크</a></u></strong></h2>
+  저는 생활코딩을 공부하는 한 학생입니다. 결국 저는 <strong><u>10년차</u> 프로그래머</strong>가 될 것입니다.
+  <p>
+  내가 사야하는 노트북<br><br>
+  한성컴퓨터 올데이롱 TFX5470H/울트라북/AMD 르누아르/R7-4800H</p>
+  <p style="margin-top:1px;">
+  [신한/KB국민/현대/삼성 100만원 이상 SKpay 결제 시 최대 22개월 무이자]<br>[신한/KB국민/현대/삼성/NH농협 20만원 이상 SK pay 결제 시 최대 12개월 무이자]
+  </p>
+  <p>
+    <span><img src="노트북.jpg" width="250"><img src="노트북 가격.PNG" width="965"><span>
+    <p class="전체들여쓰기"><strong><u><a class="abc" href="https://search.shopping.naver.com/catalog/23230103490?adId=nad-a001-02-000000098346815&channel=nshop.npla&query=%ED%95%9C%EC%84%B1%EC%98%AC%EB%8D%B0%EC%9D%B4%EB%A1%B1%EB%85%B8%ED%8A%B8%EB%B6%81&NaPm=ct%3Dkm904mqw%7Cci%3D0vx7000DSyPufE1ttKZM%7Ctr%3Dpla%7Chk%3D50b0e6288a330699f7922f8f48848a617d9c149d&cid=0vx7000DSyPufE1ttKZM"
+      target="_blank" title="노트북 구매하기">노트북 구매 링크</a></u></strong></p>
+    <br><br><br>
+    <img src="codingIU.jpg" width="100"><br><배너><br>
+  </p>
+  <p>
+    <table>
+      <tr>
+        <td><font size="15px" color="red" weigh="bold">H</font></td>
+        <td style="color:coral"><font size="15px">T</font></td>
+        <td><font size="6em" color="#0042ED">&nbsp;M</font></td>
+        <td style="color:green;"><font size="10pt">&nbsp;L</font></td>
+      </tr>
+      <tr>
+        <td style="font-style:italic;font-weight:bold;font-size:2.5em;color:#030066;">폰</font></td>
+        <td style="font-weight:bold;font-size:2em;line-hight:1.0em;color:#FFE400;">트</font></td>
+        <td align="center" style="font-size:20pt;font-style:italic;color:#5CD1E5;"><strong><u>&nbsp;연</u></strong></td>
+        <td align="center" style="font-size:30px;font-family:arial;font-weight:bold;color:#6324BD;">습</td>
+      </tr>
+    </table>
+  </p>
+  <p>
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/FjoSPLI_7SI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+  </div>
+  </div>
+</body>
+</html>

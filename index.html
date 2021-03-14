@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HV516F38ZH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HV516F38ZH');
+</script>
+</head>
+<body>
+  <input id="away" type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='white';
+  }
+">
+<input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='black';
+  }
+">
+<input id="night_day" type="button" value="야간모드" onclick="
+if(document.querySelector('#night_day').value === '야간모드'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#night_day').value = '주간모드';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='white';
+  }
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = '야간모드';
+  document.querySelectorAll('.abc').color='black';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='black';
+  }
+}
+">
+  <h1><a class="abc" style="background-color:pink; padding-left:20px; padding-right:20px" href="index.html">WEB - Welcome</a></h1>
+    <div id="grid">
+    <ul>
+      <li><a class="abc" href="1.html">1. HTML</a></li>
+      <li><a class="abc" href="2.html">2. CSS</a></li>
+      <li><a class="abc" href="3.html">3. JavaScript</a></li>
+    </ul>
+    <div id="article">
+    <h3 style="color:#47C83E">현재 구현기능 HTML,CSS,JvaScript 활용. 추가 기능 - 링크, 이미지, 영상 삽입, 방문자 분석기능, 댓글 또는 이미지 첨부기능, 실시간 대화하기 기능, 화면이 줄어들면 그에 맞게 레이아웃이 변경되는 반응형 웹 페이지 기능,
+    버튼으로 주야간모드 전환 가능, 링크 클릭 색상 변경, 그리드 활용 레이아웃 분할, CSS이미지 입히기</h3>
+
+      <p>
+        WEB이란 무엇인가?
+        -웹이란 World Wide Web의 줄임말로 WWW라고 부르기도 한다. 정보의 그물망이라고 보면 되는데 쉽게 말하면 많은 정보가 서로 얽혀있는 무었인가라고 생각하면된다. 웹에는 수많은 웹사이트들이 있고 각각의 웹사이트는 웹 페이지라는 것으로 이루어진다. 네이버나 구글 이런것 들도 다 웹페이지다. 웹 페이지에는 글, 그림, 동영상 등 수많은 정보를 담고 있고, 마우스로 클릭하면 해당 웹 페이지로 이동하는 링크들이 있다. 이러한 링크들을 통해 각각의 웹 페이지들이 서로 연결되어 있다.
+      </p>
+      <p>
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://web1-kum2iio10b.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/604582951c1c2a130d660026/1f07oc6tb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    </div>
+    </div>
+  </body>
+</html>

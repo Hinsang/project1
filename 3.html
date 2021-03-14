@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+  </style>
+  <title>WEB1 - JavaScript</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HV516F38ZH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HV516F38ZH');
+</script>
+</head>
+<body>
+  <input id="away" type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='white';
+  }
+">
+<input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='black';
+  }
+">
+<input id="night_day" type="button" value="야간모드" onclick="
+if(document.querySelector('#night_day').value === '야간모드'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#night_day').value = '주간모드';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='white';
+  }
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = '야간모드';
+  document.querySelectorAll('.abc').color='black';
+  var his = document.querySelectorAll('.abc');
+  for(i=0;i<his.length;i++){
+    his[i].style.color='black';
+  }
+}
+">
+  <h1><a class="abc" style="background-color:pink; padding-left:20px; padding-right:20px" href="index.html">WEB</a></h1>
+  <div id="grid">
+  <ul>
+    <li><a class="abc" href="1.html">1. HTML</a></li>
+    <li><a class="abc" href="2.html">2. CSS</a></li>
+    <li><a class="abc" href="3.html">3. JavaScript</a></li>
+  </ul>
+  <div id="article">
+  <h2 style="background-color:coral; color:powderblue">JavaScript란 무엇인가?</h2>
+  <p>
+    <span style="font-weight:bold; font-size:1.5em; width:160px; margin-right:12px; background-color:pink; color:blue">자바스크립트란?</span>
+    <span style="font-weight:bold; font-size:1.3em; text-decoration:underline; font-style:italic; color:#8041D9">자바스크립트</span>를 한마디로 요약하자면 웹을 풍부하게 만들어주는 작고 가벼운 언어입니다. 미국의 넷스케이프 커뮤니케이션즈사(Netscape Communications)가 개발한 스크립트 언어이며. 웹 브라우저에서 실행하는 스크립트 언어를 기술합니다. 작고도 빠르기 때문에 웹문서를 동적으로 꾸밀 때 가장 널리 쓰입니다. 언어 규격은 <span class="js">자바</span>의 부분 집합(subset)으로 되어 있습니다. 하이퍼텍스트 생성 언어(HTML) 문서를 작성하는 수준의 사용자가 사용하는 것을 주안점으로 하여 <span class="js">자바</span>의 언어 규격으로부터 변수의 형(정수형이나 문자열형 등)을 생략하거나 새로운 클래스 정의를 할 수 없도록 하였습니다. 스크립트는 HTML 문서 속에 직접 기술하며, script라는 꼬리표를 사용합니다. 프로그래밍 입문자들은 <span style="font-weight:bold; font-size:1.2em; color:green">자바스크립트</span>와 <span class="js">자바</span>가 서로 비슷한 기술이라고 생각하곤 합니다. 두 언어 모두 <span class="js">자바</span>라는 언어를 기반으로 하고 있기 때문이죠. 하지만 <span style="font-weight:bold; font-size:1.2em; color:green">자바스크립트</span>는 <span class="js">자바</span>와는 다른점이 상당히 많습니다. <strong><u>기능과 사용법까지 완전히 다릅니다.</u></strong>
+  </p>
+  </div>
+  </div>
+</body>
+</html>
